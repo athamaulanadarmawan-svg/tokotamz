@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duo Rasa - Martabak, Durian & Mochi Bar</title>
+    <style>
+        :root {
+            --primary-durian: #F4D03F;
+            --secondary-mochi: #FFB6C1;
+            --mint-fresh: #A3E4D7;
+            --dark-text: #2C3E50;
+            --light-bg: #FBFCFC;
+            --wa-green: #25D366;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--dark-text);
+            line-height: 1.6;
+            padding-bottom: 80px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-durian), var(--secondary-mochi));
+            text-align: center;
+            padding: 40px 20px;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: #2C3E50;
+        }
+
+        header p {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #34495E;
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: #fff;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            border-bottom: 3px solid var(--mint-fresh);
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            color: #2C3E50;
+            font-size: 1.5rem;
+        }
+
+        .menu-category {
+            margin-bottom: 20px;
+        }
+
+        .menu-category h3 {
+            background-color: #F9E79F;
+            padding: 5px 10px;
+            border-left: 5px solid #F39C12;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            border-radius: 0 4px 4px 0;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 12px;
+            padding-left: 10px;
+            position: relative;
+        }
+
+        li strong {
+            color: #E67E22;
+        }
+
+        .strategy-list li::before {
+            content: "✓";
+            color: #27AE60;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* 📱 Tombol WhatsApp Melayang */
+        .btn-wa {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--wa-green);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+            z-index: 1000;
+            width: 90%;
+            max-width: 350px;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .btn-wa:active {
+            transform: translateX(-50%) scale(0.95);
+            background-color: #128C7E;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            background-color: #eaeded;
+            color: #7f8c8d;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🏪 Duo Rasa</h1>
+        <p>"Gurihnya Juara, Manis Selangit, Kenyalnya Nagih!"</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>📌 Konsep & Branding Toko</h2>
+            <p><strong>Duo Rasa: Martabak, Durian & Mochi Bar</strong> adalah sebuah konsep toko kuliner modern yang menggabungkan tiga pilar rasa utama: kegurihan martabak asin, kelegitan buah durian asli, dan tekstur kenyal dari mochi kekinian.</p>
+            <br>
+            <p>Kedai kami menggunakan tema <em>open kitchen</em> minimalis dengan kombinasi warna kuning pastel dan merah muda estetik untuk menarik perhatian generasi milenial & Gen Z.</p>
+        </section>
+
+        <section>
+            <h2>📋 Menu Utama (Signature Menu)</h2>
+            
+            <div class="menu-category">
+                <h3>🥚 A. Martabak Asin Premium (Savory)</h3>
+                <ul>
+                    <li><strong>Martabak Bebek Moza:</strong> Isi daging sapi cincang melimpah dengan keju mozzarella leleh di atasnya.</li>
+                    <li><strong>Martabak Kari Ayam Pedas:</strong> Isi daging ayam bumbu kari kental dengan irisan cabai rawit segar.</li>
+                    <li><strong>Martabak Asin Keju Garlic:</strong> Dimasak dengan <em>garlic butter</em> dan parutan keju parmesan.</li>
+                </ul>
+            </div>
+
+            <div class="menu-category">
+                <h3>👑 B. Serba Durian Asli (Sweet)</h3>
+                <ul>
+                    <li><strong>Durian Kupas Premium:</strong> Daging buah durian segar (Montong/Medan) pilihan kualitas terbaik.</li>
+                    <li><strong>Ketan Durian Lumer:</strong> Ketan gurih yang disiram saus vla durian kental yang melimpah.</li>
+                </ul>
+            </div>
+
+            <div class="menu-category">
+                <h3>🍡 C. Mochi & Fusion (Chewy)</h3>
+                <ul>
+                    <li><strong>Daifuku Mochi Durian:</strong> Mochi besar dengan isian <em>whipped cream</em> lembut dan potongan durian asli.</li>
+                    <li><strong>Mochi Bites Saus Durian:</strong> Mochi mini polos kenyal dengan cocolan saus vla durian manis.</li>
+                    <li><strong>Martabak Manis Pandan Durian:</strong> Martabak manis pandan dengan topping daging durian asli.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>🚀 Strategi Operasional</h2>
+            <ul class="strategy-list">
+                <li><strong>Menu Bundling:</strong> Paket hemat "Paket Puas" (Martabak Asin + Mochi Durian) untuk menaikkan omzet.</li>
+                <li><strong>Garansi Rasa:</strong> Garansi ganti baru jika buah durian yang diterima konsumen hambar atau busuk.</li>
+                <li><strong>Digital Integrasi:</strong> Siap dipesan melalui GoFood, GrabFood, ShopeeFood, dan pre-order WhatsApp.</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- 🟢 Tombol WhatsApp Otomatis -->
+    <a href="https://wa.me 62+858-5029-5937" class="btn-wa" target="_blank">
+        💬 Hubungi & Pesan via WhatsApp
+    </a>
+
+    <footer>
+        <p>Dibuat dengan 💛 untuk kemajuan UMKM Kuliner Indonesia.</p>
+    </footer>
+
+</body>
+</html>
