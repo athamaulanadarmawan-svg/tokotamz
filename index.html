@@ -25,7 +25,7 @@
             background-color: var(--light-bg);
             color: var(--dark-text);
             line-height: 1.6;
-            padding-bottom: 80px;
+            padding-bottom: 90px;
         }
 
         header {
@@ -71,31 +71,61 @@
             font-size: 1.5rem;
         }
 
+        /* 📸 Gaya Foto Menu */
+        .menu-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
         .menu-category {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
         .menu-category h3 {
             background-color: #F9E79F;
             padding: 5px 10px;
             border-left: 5px solid #F39C12;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             font-size: 1.1rem;
             border-radius: 0 4px 4px 0;
         }
 
-        ul {
-            list-style-type: none;
+        .table-responsive {
+            overflow-x: auto;
+            margin-top: 10px;
         }
 
-        li {
-            margin-bottom: 12px;
-            padding-left: 10px;
-            position: relative;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
         }
 
-        li strong {
-            color: #E67E22;
+        th, td {
+            padding: 12px 10px;
+            text-align: left;
+            border-bottom: 1px solid #E5E7E9;
+        }
+
+        th {
+            background-color: #F2F4F4;
+            color: var(--dark-text);
+            font-weight: bold;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #27AE60;
+            white-space: nowrap;
+        }
+
+        .strategy-list li {
+            margin-bottom: 10px;
         }
 
         .strategy-list li::before {
@@ -152,43 +182,107 @@
     </header>
 
     <div class="container">
+        <!-- Konsep Bisnis -->
         <section>
             <h2>📌 Konsep & Branding Toko</h2>
             <p><strong>Duo Rasa: Martabak, Durian & Mochi Bar</strong> adalah sebuah konsep toko kuliner modern yang menggabungkan tiga pilar rasa utama: kegurihan martabak asin, kelegitan buah durian asli, dan tekstur kenyal dari mochi kekinian.</p>
-            <br>
-            <p>Kedai kami menggunakan tema <em>open kitchen</em> minimalis dengan kombinasi warna kuning pastel dan merah muda estetik untuk menarik perhatian generasi milenial & Gen Z.</p>
         </section>
 
+        <!-- Menu & Daftar Harga -->
         <section>
-            <h2>📋 Menu Utama (Signature Menu)</h2>
+            <h2>📋 Daftar Menu, Foto & Harga</h2>
             
+            <!-- KATEGORI MARTABAK -->
             <div class="menu-category">
                 <h3>🥚 A. Martabak Asin Premium (Savory)</h3>
-                <ul>
-                    <li><strong>Martabak Bebek Moza:</strong> Isi daging sapi cincang melimpah dengan keju mozzarella leleh di atasnya.</li>
-                    <li><strong>Martabak Kari Ayam Pedas:</strong> Isi daging ayam bumbu kari kental dengan irisan cabai rawit segar.</li>
-                    <li><strong>Martabak Asin Keju Garlic:</strong> Dimasak dengan <em>garlic butter</em> dan parutan keju parmesan.</li>
-                </ul>
+                <!-- Foto Martabak Telur -->
+                <img src="https://unsplash.com" alt="Martabak Asin" class="menu-image">
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Menu Martabak</th>
+                                <th>Harga</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Martabak Bebek Moza (Sapi Cincang + Mozzarella)</td>
+                                <td class="price">Rp 45.000</td>
+                            </tr>
+                            <tr>
+                                <td>Martabak Kari Ayam Pedas</td>
+                                <td class="price">Rp 38.000</td>
+                            </tr>
+                            <tr>
+                                <td>Martabak Asin Keju Garlic (Garlic Butter)</td>
+                                <td class="price">Rp 40.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
+            <!-- KATEGORI DURIAN -->
             <div class="menu-category">
                 <h3>👑 B. Serba Durian Asli (Sweet)</h3>
-                <ul>
-                    <li><strong>Durian Kupas Premium:</strong> Daging buah durian segar (Montong/Medan) pilihan kualitas terbaik.</li>
-                    <li><strong>Ketan Durian Lumer:</strong> Ketan gurih yang disiram saus vla durian kental yang melimpah.</li>
-                </ul>
+                <!-- Foto Buah Durian -->
+                <img src="https://unsplash.com" alt="Durian Segar" class="menu-image">
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Menu Durian</th>
+                                <th>Harga</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Durian Kupas Premium (Medan/Montong)</td>
+                                <td class="price">Rp 65.000</td>
+                            </tr>
+                            <tr>
+                                <td>Ketan Durian Lumer (Vla Kental)</td>
+                                <td class="price">Rp 25.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
+            <!-- KATEGORI MOCHI -->
             <div class="menu-category">
                 <h3>🍡 C. Mochi & Fusion (Chewy)</h3>
-                <ul>
-                    <li><strong>Daifuku Mochi Durian:</strong> Mochi besar dengan isian <em>whipped cream</em> lembut dan potongan durian asli.</li>
-                    <li><strong>Mochi Bites Saus Durian:</strong> Mochi mini polos kenyal dengan cocolan saus vla durian manis.</li>
-                    <li><strong>Martabak Manis Pandan Durian:</strong> Martabak manis pandan dengan topping daging durian asli.</li>
-                </ul>
+                <!-- Foto Mochi Daifuku -->
+                <img src="https://unsplash.com" alt="Mochi Daifuku" class="menu-image">
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Menu Mochi & Fusion</th>
+                                <th>Harga</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Daifuku Mochi Durian (Isi 2 Pcs besar)</td>
+                                <td class="price">Rp 28.000</td>
+                            </tr>
+                            <tr>
+                                <td>Mochi Bites Saus Durian (Isi 10 Pcs mini)</td>
+                                <td class="price">Rp 22.000</td>
+                            </tr>
+                            <tr>
+                                <td>Martabak Manis Pandan Durian Asli</td>
+                                <td class="price">Rp 50.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
 
+        <!-- Strategi -->
         <section>
             <h2>🚀 Strategi Operasional</h2>
             <ul class="strategy-list">
@@ -199,14 +293,5 @@
         </section>
     </div>
 
-    <!-- 🟢 Tombol WhatsApp Otomatis -->
-    <a href="https://wa.6285850295937" class="btn-wa" target="_blank">
-        💬 Hubungi & Pesan via WhatsApp
-    </a>
-
-    <footer>
-        <p>Dibuat dengan 💛 untuk kemajuan UMKM Kuliner Indonesia.</p>
-    </footer>
-
-</body>
-</html>
+    <!-- 📍 DI SINI TEMPAT MENARUH NOMOR WA KAMU BOLO 👇 -->
+    <!-- Ganti teks '6289999999999' di bawah ini dengan nomor WhatsApp tokomu asli -->
